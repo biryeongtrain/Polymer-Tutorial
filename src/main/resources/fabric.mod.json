@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "serverside-mod-tutorial",
+  "version": "${version}",
+
+  "name": "ServerSide-Mod-Tutorial",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/kb100/ServerSide-Mod-Tutorial"
+  },
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/serverside-mod-tutorial/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.qf.serversidemodtutorial.ServerSide_Mod_Tutorial"
+    ]
+  },
+
+      "mixins": [
+        "serverside-mod-tutorial.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
